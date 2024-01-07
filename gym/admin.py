@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import Key_Panel
 
-# Register your models here.
+class ListFamily(admin.ModelAdmin):
+    list_display = ('id','resident','check_in','check_out')
+
+admin.site.register(Key_Panel,ListFamily)
+
