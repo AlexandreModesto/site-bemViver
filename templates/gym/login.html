@@ -1,0 +1,16 @@
+{% extends 'base_admin.html' %}
+{% load static %}
+{% block content %}
+<div class="justify-content-center" style="display:flex;">
+    <div class="login-div">
+        <form action="" method="post">
+            {% csrf_token %}
+            {% for item in login.visible_fields %}
+            <label class="label"for="{{signIn.id_for_label}}"><h5>{{item.label}}</h5></label>
+            {{item}}
+            {% endfor %}
+            <input class="btn btn-success" type="submit"value="Enviar" style="margin-top:10px;">
+        </form>
+    </div>
+</div>
+{% endblock %}

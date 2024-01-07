@@ -1,0 +1,42 @@
+{% extends 'base_admin.html' %}
+{% load static %}
+{% block content %}
+<div style="display:flex;justify-content:center;">
+    <div class="card log">
+        <div class="card-header">
+            <h3 class="card-title">Últimos Registros</h3>
+        </div>
+        <div class="card-body">
+            {% for key in last_five %}
+            {% if key.check_out == None %}
+            <p class="card-text" style="background-color:rgba(0,0,0,.125)">{{ key }}, chave ainda não entregue</p>
+            {% else %}
+            <p class="card-text">{{ key }}, chave devolvida às {{key.check_out}}</p>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="card log" style="margin-left:10%;">
+        <div class="card-header">
+            <h3 class="card-title">Controles</h3>
+        </div>
+        <div class="admin-controls">
+            {% if open %}
+            <button type="button" onclick="window.location='{% url 'api' open %}'" class="btn btn-success">Atualizar Registros</button>
+            {% else %}
+            <button type="button" disabled class="btn btn-success">Todos Registros Atualizados</button>
+            {% endif %}
+            <button type="button" onclick="document.getElementById('add').style.display='block'" class="btn btn-success">Adicionar novo registro</button>
+            <div class="card-body" style="display:none" id="add">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <p class="card-text">Digite no campo abaixo o nome do residente</p>
+                    <input class="name" type="text" name="name" id="name">
+                    <br>
+                    <input class="btn btn-success" style="margin-top:10px;" type="submit" value="Registrar">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

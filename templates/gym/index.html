@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<section id="status">
+    <h1>Situação da Academia</h1>
+{% if status %}
+    <p><span style="border-bottom: 3px solid #ff9745;">No momento a academia esta em uso por <strong>{{ status }}</strong></span></p>
+{% else %}
+    <p><span style="border-bottom: 3px solid #ff9745;">A academia não está sendo utilizada no momento</span></p>
+{% endif %}
+</section>
+<br>
+<p>A prática regular de musculação pode ajudar a prevenir lesões, uma vez que, ao fortalecer os músculos, a pessoa aumenta estabilidade, suporte das articulações, flexibilidade e coordenação motora, o que contribui para evitar acidentes.</p>
+<br>
+<p>— A construção de uma musculatura sólida reduz, significativamente, o risco de lesões durante a prática esportiva, permitindo que você desfrute de uma rotina ativa com mais segurança — afirma Lucas Meireles, coordenador do Tonus Gym – rede de Studios do Grupo Smart Fit voltada para a musculação.</p>
+<br>
+<p>Considerada por especialistas uma das formas mais eficazes para ganhar massa muscular, a musculação, aliada a uma alimentação equilibrada e a um descanso adequado, torna o crescimento dos músculos propício, permitindo que eles se desenvolvam com mais volume e força. No entanto, para ganhar massa muscular, é importante adotar uma rotina de treinamento bem-estruturada.</p>
+<p>A musculação é uma das atividades físicas que contribui para o bem-estar físico e mental do corpo, por isso é frequentemente recomendada para quem deseja ter mais disposição e reduzir o estresse.</p>
+<p>É comum ouvir pessoas que praticam esse exercício relatarem que ficaram menos doentes após o início da atividade. Isso ocorre porque a musculação favorece a circulação sanguínea, o que facilita o transporte de células do sistema imunológico pelo corpo, prevenindo possíveis enfermidades.</p>
+<h3>Seção para Idosos</h3>
+<section id="trains">
+    <h4>Prancha isométrica</h4>
+    <p>Como fazer: Em um colchonete, deite de barriga para baixo, coloque as mãos na largura dos ombros e os antebraços no chão. Então, faça força para subir, apoiando o peso nos antebraços e nas pontas dos pés, mantendo o abdômen contraído. Seu corpo deve ficar em linha, com o quadril e a cabeça nem muito levantados ou abaixados.
+        <br><strong>Execução: 3 x 30 segundos</strong>
+    </p>
+    <h4>Agachamento no banco</h4>
+    <p>Como fazer: Em pé e de costas para uma cadeira, deixe os pés abertos na largura dos ombros. Jogue o quadril para trás e para baixo até sentar na cadeira. Realize o movimento contrário para ficar em pé. Se estiver muito fácil, segure um halter em cada mão.
+        <br><strong>Execução: 3 x 10 a 12 repetições.</strong>
+    </p>
+    <h4>Gêmeos em pé</h4>
+    <p>Como fazer: Suba em um step ou degrau somente com as pontinhas dos pés. Faça força para subir na ponta dos pés. Retorne.
+        <br><strong>Execução: 3 x 12 a 15 repetições.</strong>
+    </p>
+    <h4>Rosca Direta com halteres</h4>
+    <p>Como fazer: Fique em pé e abra as pernas na largura do quadril. Flexione levemente os joelhos. Segure um halter em cada mão e deixe-as voltadas para frente. Puxe os pesinhos até perto dos ombros. Retorne.
+        <br><strong>Execução: 3 x 10 a 12 repetições.</strong>
+    </p>
+    <h4>Caminhada Leve Inicial(Pedestre/Ciclofaixa)</h4>
+    <p>Como fazer: Caminhe por toda a via, faça uma ida e/ou uma vinda
+        <br><strong>Execução: 1 repetição.</strong>
+    </p>
+    <h4>Corrida leve (Pedestre/Ciclofaixa)</h4>
+    <p>Como fazer: corra numa velocidade leve, como um trote. A distancia é medida pelos postes durante a via, conte 5 postes e comece a caminhar.Após caminhar 5 postes será 1 execução.
+        <br><strong>Execução: 3 repetições </strong>
+    </p>
+    <h4>Corrida Moderada (Pedetre/Ciclofaixa)</h4>
+    <p>Como fazer: corra numa velocidade moderada, um pouco mais rápido que um trote.A distancia é medida pelos postes durante a via, conte 8 postes e comece a caminhar.Após caminhar 8 postes será 1 execução.
+        <br><strong>Execução: 3 repetições </strong>
+    </p>
+    <br>
+    <h3>Seção para jovens e adultos</h3>
+    <h4>Agachamento livre</h4>
+    <p><strong>Execução: 3 séries com 6-8 repetições e 120 segundos de descanso entre cada série.</strong></p>
+    <h4>Leg press</h4>
+    <p><strong>Execução: 3 séries com 10-12 repetições e 90 segundos de descanso entre cada série.</strong></p>
+    <h4>Passada</h4>
+    <p><strong>Execução: 3 séries com 10 passos ida e volta e 60 segundos de descanso entre cada série.</strong></p>
+    <h4>Barra-fixa</h4>
+    <p><strong>Execução: 3 séries com 6-8 repetições e 120 segundos de descanso entre cada série.</strong></p>
+    <h4>Puxada no pulley com pegada supinada</h4>
+    <p><strong>Execução: 3 séries com 10 repetições e 90 segundos de descanso entre cada série.</strong></p>
+    <h4>Pulldown</h4>
+    <p><strong>Execução: 3 séries com 15 repetições e 60 segundos de descanso entre cada série.</strong></p>
+    <h4>Supino reto com barra</h4>
+    <p><strong>Execução: 3 séries com 6-8 repetições e 120 segundos de descanso entre cada série.</strong></p>
+    <h4>Supino inclinado com halteres</h4>
+    <p><strong>Execução: 3 séries com 10 repetições e 90 segundos de descanso entre cada série.</strong></p>
+    <h4>Crossover</h4>
+    <p><strong>Execução: 3 séries com 12 repetições e 60 segundos de descanso entre cada série (leve a última série até a falha).</strong></p>
+</section>
+<section id="nutrition">
+    <h3>Alimentação</h3>
+    <p>O corpo humano tem uma validade. Assim, os ossos se desgastam, as células enfraquecem e os músculos perdem força. Sabendo que a estrutura corporal sofre alterações ao longo dos anos, como as hormonais, nada melhor do que sempre assegurar um fortalecimento por meio de bons hábitos.<br>
+Além de uma vida regrada e de boas noites de sono, a alimentação saudável faz uma imensa diferença. Isso porque é preciso manter a massa muscular e ainda prevenir doenças que são comuns nesse momento, como diabetes, hipertensão, câncer, osteoporose e outros males.</p>
+    <ol>
+        <li>
+            <span><h5>Priorize os alimentos naturais</h5></span>A industrialização alimentícia abriu um leque de opções nos supermercados, mas fique atento: geralmente, os embalados e fracionados têm poucas porcentagens de vitaminas, muito sódio, conservantes e outros produtos químicos nocivos à saúde.
+            <br>Com isso em mente, a nossa dica comprovada por especialistas é a escolha de alimentos naturais, como os existentes no setor de hortifrutigranjeiros ou nas feiras livres de sua cidade. Se você tiver condições financeiras de comprar os orgânicos, melhor ainda.
+            <br>Observe nas embalagens se o produto é feito artesanalmente, se existe uma referência da fazenda e escolha as mercadorias mais frescas. Seguindo essa prática, compre frutas, verduras e legumes, inserindo uma variedade em suas refeições, como uma sopa no jantar.
+
+        </li>
+        <br>
+        <li>
+            <span><h5>Consuma fibras</h5></span>As fibras são importantíssimas na alimentação para idosos em razão do controle da glicose, da redução do colesterol e, até mesmo, da prevenção do câncer de cólon. Ademais, aumentam a sensação de saciedade, ou seja, têm um papel preponderante na manutenção do peso.
+            <br>Uma boa dica é inserir farelo de aveia no mamão ou em vitaminas. Idosos saudáveis podem consumir de 1 a 2 colheres de sopa por dia. Aí, o acompanhamento vai da sua criatividade, como frutas, leite, na produção de tortas ou bolos.
+        </li>
+        <br>
+        <li><span><h5>Inclua alimentos ricos em ômega 3</h5></span>O consumo de peixes ricos em ômega 3, pelo menos, uma vez por semana é fundamental para ajudar na saúde das pessoas idosas. A substância tem uma função anti-inflamatória e ainda auxilia na prevenção e no controle de várias doenças, como diabetes, artrites, entre outras.
+            <br>Além disso, um peixinho sempre cai bem no almoço acompanhado de purê, arroz e feijão. No caso do arroz, a orientação é optar pelo integral.
+        </li>
+        <br>
+        <li>
+            <span><h5>Mantenha uma rotina em suas refeições</h5></span>O organismo humano necessita de regularidade para funcionar bem, principalmente na terceira idade. Assim, evite fazer as suas refeições em horários diferentes ao longo da semana. A dica é sempre manter o café da manhã, o almoço, o lanche da tarde e a janta nos mesmos horários.
+            <br>Você pode até comer uma fruta entre uma refeição e outra, mas evite almoçar um dia às 13h e, no outro, às 11h, por exemplo. O objetivo é manter o organismo como um bom relógio suíço.
+        </li>
+        <br>
+        <li>
+            <span><h5>Consuma proteínas</h5></span>As proteínas são excelentes para combater a anemia. Por isso, vale a pena inserir, no cardápio, carnes vermelhas. Isso porque a falta de ferro pode trazer várias consequências, como cansaço excessivo, dores de cabeça, entre outros.
+            <br>Além disso, muitos idosos perdem massa magra, que pode ser mantida por meio da ingestão de carnes com baixo teor de gordura. Dessa maneira, você garantirá, ainda, a ingestão de zinco, responsável pelo fortalecimento do sistema imunológico.
+            <br>Existem também outras fontes de proteínas, como grão-de-bico, lentilha, feijão, entre outros, ou seja, as opções são bem variadas.
+        </li>
+        <br>
+        <li>
+            <span><h5>Evite os excessos</h5></span>Essa dica já deveria ser uma rotina na <strong>alimentação para idosos</strong>, mas os excessos permanecem como grandes vilões. Afinal, muita gente exagera em um evento, come mais doces do que deveria em um aniversário e abusa do cafezinho acompanhado de biscoitos. Sem falar no churrasco, na cervejinha e em tantas outras tentações.
+            <br>Como é preciso se cuidar, evitar os excessos contribui para a manutenção do peso e também da saúde, tendo em vista que vários abusos ao longo de um período de tempo podem representar a causa de problemas irreversíveis, como diabetes, hipertensão, problemas no coração etc.
+        </li>
+    </ol>
+    <p>Portanto, como a vida tem um prazo determinado para todos nós, nada melhor do que vivenciá-la com qualidade. Sendo assim, vale a pena colocar em prática todas as dicas, ingerindo, ainda, vitaminas, como B12 e D, transformando a <strong>alimentação para idosos</strong> em um meio de longevidade. Afinal, cada um é responsável pela vida que leva.</p>
+</section>
+<br>
+{% endblock %}
